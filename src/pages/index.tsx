@@ -5,6 +5,12 @@ import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 import { SocialList } from "../components/SocialList";
 
+declare global {
+    interface Window {
+        netlifyIdentity:any;
+    }
+}
+
 export default function Index() {
   
     useEffect(()=>{
